@@ -1,0 +1,38 @@
+﻿# Default ignored files
+*.suo
+*.user
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.vspscc
+*.vssscc
+.vs/
+.vscode/
+obj/
+bin/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+packages/
+_ReSharper*/
+[Tt]humbs.db
+[Tt]estResults
+_ReSharper*/
+*.ReSharper
+[Tt]est[Rr]esult*
+
+
+/.idea/
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
