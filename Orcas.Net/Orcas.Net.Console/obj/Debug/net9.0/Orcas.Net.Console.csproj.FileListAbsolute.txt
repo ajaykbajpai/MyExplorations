@@ -1,0 +1,15 @@
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/bin/Debug/net9.0/Orcas.Net.Console
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/bin/Debug/net9.0/Orcas.Net.Console.deps.json
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/bin/Debug/net9.0/Orcas.Net.Console.runtimeconfig.json
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/bin/Debug/net9.0/Orcas.Net.Console.dll
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/bin/Debug/net9.0/Orcas.Net.Console.pdb
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/Orcas.Net.Console.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/Orcas.Net.Console.AssemblyInfoInputs.cache
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/Orcas.Net.Console.AssemblyInfo.cs
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/Orcas.Net.Console.csproj.CoreCompileInputs.cache
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/Orcas.Net.Console.sourcelink.json
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/Orcas.Net.Console.dll
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/refint/Orcas.Net.Console.dll
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/Orcas.Net.Console.pdb
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/Orcas.Net.Console.genruntimeconfig.cache
+/Users/shadow/Dev/Repos/MyExplorations/Orcas.Net/Orcas.Net.Console/obj/Debug/net9.0/ref/Orcas.Net.Console.dll
