@@ -1,0 +1,11 @@
+**/.DS_Store
+node_modules
+/build/
+**/dist/
+**/coverage/
+**/packages/
+**/bin/
+**/obj/
+*.user
+*.suo
+**/.idea/
