@@ -7,33 +7,54 @@ using Bookify.CA.Domain.Shared.Types.Values;
 
 namespace Bookify.CA.Domain.Bookings.Entities;
 
-public sealed class Booking(
-    Guid id,
-    Guid apartmentId,
-    Guid userId,
-    DateRange duration,
-    Money priceForPeriod,
-    Money cleaningFee,
-    Money amenitiesUpCharge,
-    Money totalPrice,
-    BookingStatus status,
-    DateTime createdOnUtc)
-    : Entity(id)
+public sealed class Booking : Entity
 {
-    public Guid ApartmentId { get; private set; } = apartmentId;
-    public Guid UserId { get; private set; } = userId;
-    public DateRange Duration { get; private set; } = duration;
-    public Money PriceForPeriod { get; private set; } = priceForPeriod;
-    public Money CleaningFee { get; private set; } = cleaningFee;
-    public Money AmenitiesUpCharge { get; private set; } = amenitiesUpCharge;
-    public Money TotalPrice { get; private set; } = totalPrice;
-    public BookingStatus Status { get; private set; } = status;
-    public DateTime CreatedOnUtc { get; private set; } = createdOnUtc;
+    private Booking(
+        Guid id,
+        Guid apartmentId,
+        Guid userId,
+        DateRange duration,
+        Money priceForPeriod,
+        Money cleaningFee,
+        Money amenitiesUpCharge,
+        Money totalPrice,
+        BookingStatus status,
+        DateTime createdOnUtc) : base(id)
+    {
+        ApartmentId = apartmentId;
+        UserId = userId;
+        Duration = duration;
+        PriceForPeriod = priceForPeriod;
+        CleaningFee = cleaningFee;
+        AmenitiesUpCharge = amenitiesUpCharge;
+        TotalPrice = totalPrice;
+        Status = status;
+        CreatedOnUtc = createdOnUtc;
+    }
+    
+    public Guid ApartmentId { get; private set; }
+    public Guid UserId { get; private set; }
+    public DateRange Duration { get; private set; }
+    public Money PriceForPeriod { get; private set; }
+    public Money CleaningFee { get; private set; }
+    public Money AmenitiesUpCharge { get; private set; }
+    public Money TotalPrice { get; private set; }
+    public BookingStatus Status { get; private set; }
+    public DateTime CreatedOnUtc { get; private set; }
     public DateTime? ConfirmedOnUtc { get; private set; }
     public DateTime? RejectedOnUtc { get; private set; }
     public DateTime? CompletedOnUtc { get; private set; }
     public DateTime? CancelledOnUtc { get; private set; }
 
+    /// <summary>
+    /// Create static factory method. This must be the only way to create a booking.
+    /// </summary>
+    /// <param name="apartment"></param>
+    /// <param name="userId"></param>
+    /// <param name="duration"></param>
+    /// <param name="utcNow"></param>
+    /// <param name="pricingDetails"></param>
+    /// <returns>Booking Result</returns>
     public static Result<Booking> Reserve(
         Apartment apartment,
         Guid userId,

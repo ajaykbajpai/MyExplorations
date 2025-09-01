@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sapience.Framework.Synapse", "Sapience.Framework.Synapse\Sapience.Framework.Synapse.csproj", "{63E0F0A9-2557-421E-B3E2-74E03AF6FD04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E82A6472-5576-410A-BE2E-3996AB5B8B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sapience.Sample.MoviesApi", "Sapience.Sample.MoviesApi\Sapience.Sample.MoviesApi.csproj", "{2DE1B981-2DDE-4D70-A503-93E97331C10E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63E0F0A9-2557-421E-B3E2-74E03AF6FD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E0F0A9-2557-421E-B3E2-74E03AF6FD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E0F0A9-2557-421E-B3E2-74E03AF6FD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E0F0A9-2557-421E-B3E2-74E03AF6FD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DE1B981-2DDE-4D70-A503-93E97331C10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE1B981-2DDE-4D70-A503-93E97331C10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE1B981-2DDE-4D70-A503-93E97331C10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE1B981-2DDE-4D70-A503-93E97331C10E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63E0F0A9-2557-421E-B3E2-74E03AF6FD04} = {E82A6472-5576-410A-BE2E-3996AB5B8B27}
+	EndGlobalSection
+EndGlobal

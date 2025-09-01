@@ -7,22 +7,40 @@ using Bookify.CA.Domain.Reviews.Types.Values;
 
 namespace Bookify.CA.Domain.Reviews.Entities;
 
-public sealed class Review(
-    Guid id,
-    Guid apartmentId,
-    Guid bookingId,
-    Guid userId,
-    Rating rating,
-    Comment comment,
-    DateTime createdOnUtc) : Entity(id)
+public sealed class Review : Entity
 {
-    public Guid ApartmentId { get; private set; } = apartmentId;
-    public Guid BookingId { get; private set; } = bookingId;
-    public Guid UserId { get; private set; } = userId;
-    public Rating Rating { get; private set; } = rating;
-    public Comment Comment { get; private set; } = comment;
-    public DateTime CreatedOnUtc { get; private set; } = createdOnUtc;
-    
+    private Review(
+        Guid id,
+        Guid apartmentId,
+        Guid bookingId,
+        Guid userId,
+        Rating rating,
+        Comment comment,
+        DateTime createdOnUtc) : base(id)
+    {
+        ApartmentId = apartmentId;
+        BookingId = bookingId;
+        UserId = userId;
+        Rating = rating;
+        Comment = comment;
+        CreatedOnUtc = createdOnUtc;
+    }
+
+    public Guid ApartmentId { get; private set; }
+    public Guid BookingId { get; private set; }
+    public Guid UserId { get; private set; }
+    public Rating Rating { get; private set; }
+    public Comment Comment { get; private set; }
+    public DateTime CreatedOnUtc { get; private set; }
+
+    /// <summary>
+    /// Create static factory method. This must be the only way to create a review.
+    /// </summary>
+    /// <param name="booking"></param>
+    /// <param name="rating"></param>
+    /// <param name="comment"></param>
+    /// <param name="createdOnUtc"></param>
+    /// <returns>Review Result</returns>
     public static Result<Review> Create(
         Booking booking,
         Rating rating,
@@ -34,7 +52,7 @@ public sealed class Review(
             return Result.Failure<Review>(ReviewErrors.NotEligible);
         }
 
-        var review = new Review(
+        Review review = new(
             Guid.NewGuid(),
             booking.ApartmentId,
             booking.Id,
